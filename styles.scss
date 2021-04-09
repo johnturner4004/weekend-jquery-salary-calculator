@@ -1,10 +1,24 @@
 @import 'config';
 
-header {
+.header {
   background-color: $quaternary-color;
   color: set-text-color($quaternary-color);
+
+  &__page-title {
+    font-size: 10vh;
+  }
+
 }
 
-h1 {
-  font-size: 10vh;
+.tableSec {
+  &__title {
+    background-color: $quaternary-color;
+    color: set-text-color($quaternary-color);
+    padding: 1vw;
+  }
+  margin: 5vw;
+  border: 1px solid $quaternary-color;
 }
+
+
+// Add styling or extra functionality that fits with the theme of this assignment.

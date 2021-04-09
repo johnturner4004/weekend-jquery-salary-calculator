@@ -5,12 +5,23 @@
   padding: 0;
 }
 
-header {
+.header {
   background-color: #27233A;
   color: #fff;
 }
 
-h1 {
+.header__page-title {
   font-size: 10vh;
+}
+
+.tableSec {
+  margin: 5vw;
+  border: 1px solid #27233A;
+}
+
+.tableSec__title {
+  background-color: #27233A;
+  color: #fff;
+  padding: 1vw;
 }
 /*# sourceMappingURL=styles.css.map */
