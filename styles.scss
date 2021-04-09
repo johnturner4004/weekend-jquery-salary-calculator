@@ -1,0 +1,10 @@
+@import 'config';
+
+header {
+  background-color: $quaternary-color;
+  color: set-text-color($quaternary-color);
+}
+
+h1 {
+  font-size: 10vh;
+}
