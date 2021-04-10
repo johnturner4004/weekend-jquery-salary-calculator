@@ -25,12 +25,12 @@
     }
 
     &__monthlyTotal {
-      width: 35vw;
+      width: 30vw;
       text-align: right;
     }
 
     &__total {
-      width: 5vw;
+      width: 10vw;
       padding-left: 1vw;
     }
 
@@ -62,9 +62,8 @@
           border: none;
         }
         border: none;
-        //background-color: $secondary-color;
       }
-
+      
       tr:nth-child(even) {
         background-color: $primary-color;
       }
