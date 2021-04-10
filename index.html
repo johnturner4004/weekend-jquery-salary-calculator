@@ -18,9 +18,13 @@
   <main>
     <!-- employee first name, last name, ID number, job title, annual salary -->
     <section class=tableSec>
-      <h2 class="tableSec__title">Employee Data</h2>
-      <table>
-        <thead class="tableSec__thead">
+      <div class="tableSec__title">
+        <h2 class="tableSec__title__text">Employee Data</h2>
+        <h2 class="tableSec__title__monthlyTotal">Monthly Expense:</h2>
+        <h2 class="tableSec__title__total">$0</h2>
+      </div>
+      <table class="tableSec__table" cellspacing="0" cellpadding="0">
+        <thead class="tableSec__table__thead">
           <tr>
             <th>First Name</th>
             <th>Last Name</th>
@@ -32,12 +36,15 @@
           <tr>
             <th><input type="text" id="in-first-name" placeholder="First Name" /></th>
             <th><input type="text" id="in-last-name" placeholder="Last Name" /></th>
-            <th><input type="text" id="in-id-numver" placeholder="ID Number" /></th>
+            <th><input type="text" id="in-id-number" placeholder="ID Number" /></th>
             <th><input type="text" id="in-job-title" placeholder="Job Title" /></th>
             <th><input type="text" id="in-annual-salary" placeholder="Annual Salary" /></th>
             <th><button class="submit">Submit</button></th>
           </tr>
         </thead>
+        <tbody class="tableSec__table__tbody">
+          <!--space to append employee data table-->
+        </tbody>
       </table>
     </section>
   </main>

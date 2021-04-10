@@ -8,10 +8,12 @@
 .header {
   background-color: #27233A;
   color: #fff;
+  padding: 2vw;
 }
 
 .header__page-title {
   font-size: 10vh;
+  text-align: center;
 }
 
 .tableSec {
@@ -23,5 +25,72 @@
   background-color: #27233A;
   color: #fff;
   padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tableSec__title__text {
+  width: 45vw;
+}
+
+.tableSec__title__monthlyTotal {
+  width: 35vw;
+  text-align: right;
+}
+
+.tableSec__title__total {
+  width: 5vw;
+  padding-left: 1vw;
+}
+
+.tableSec__table {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.tableSec__table__thead tr {
+  background-color: #505168;
+  border: none;
+}
+
+.tableSec__table__thead tr th {
+  background-color: #505168;
+  border: none;
+}
+
+.tableSec__table__tbody {
+  background-color: #BFD1E5;
+}
+
+.tableSec__table__tbody tr {
+  border: none;
+}
+
+.tableSec__table__tbody tr td {
+  border: none;
+}
+
+.tableSec__table__tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+button {
+  width: 14.5vw;
+  margin: none;
+}
+
+th {
+  width: 15vw;
+}
+
+input[type="text"] {
+  width: 15vw;
 }
 /*# sourceMappingURL=styles.css.map */

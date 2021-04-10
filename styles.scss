@@ -3,9 +3,11 @@
 .header {
   background-color: $quaternary-color;
   color: set-text-color($quaternary-color);
+  padding: 2vw;
 
   &__page-title {
     font-size: 10vh;
+    text-align: center;
   }
 
 }
@@ -15,10 +17,79 @@
     background-color: $quaternary-color;
     color: set-text-color($quaternary-color);
     padding: 1vw;
+    display: flex;
+    flex-direction: row;
+
+    &__text {
+      width: 45vw;
+    }
+
+    &__monthlyTotal {
+      width: 35vw;
+      text-align: right;
+    }
+
+    &__total {
+      width: 5vw;
+      padding-left: 1vw;
+    }
+
   }
+
+
+  &__table {
+    border: none;
+    margin: 0;
+    padding: 0;
+    // background-color: $tertairy-color;
+
+    &__thead {
+      
+      tr {
+        background-color: $tertairy-color;
+        th {
+          background-color: $tertairy-color;
+          border: none;
+        }
+        border: none;
+      }
+      
+    }
+
+    &__tbody {
+      tr {
+        td {
+          border: none;
+        }
+        border: none;
+        //background-color: $secondary-color;
+      }
+
+      tr:nth-child(even) {
+        background-color: $primary-color;
+      }
+      background-color: $secondary-color;
+    }
+    border: none;
+  }
+
   margin: 5vw;
   border: 1px solid $quaternary-color;
+
+}
+
+button {
+  width: 14.5vw;
+  margin: none;
+}
+
+th {
+  width: 15vw;
+}
+
+input[type="text"] {
+  width: 15vw;
 }
 
 
-// Add styling or extra functionality that fits with the theme of this assignment.
+// Add styling or extra functionality that fits with the theme of this assignment
