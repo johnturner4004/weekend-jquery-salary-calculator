@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- currency.min.js is used to properly format the currency values for the DOM -->
   <script src="currency.min.js"></script>
   <script src="jquery-3.6.0.min.js"></script>
   <script src="client.js"></script>
-  <title>Document</title>
+  <title>Salary Calculator</title>
 </head>
 
 <body>
@@ -17,12 +18,13 @@
     <h1 class="header__page-title">Salary Calculator</h1>
   </header>
   <main>
-    <!-- employee first name, last name, ID number, job title, annual salary -->
+    <!-- table for employee first name, last name, ID number, job title, annual salary -->
     <section class=tableSec>
       <div class="tableSec__title">
         <h2 class="tableSec__title__text">Employee Data</h2>
         <h2 class="tableSec__title__monthlyTotal">Monthly Expense:</h2>
-        <h2 class="tableSec__title__total">$0</h2>
+        <!-- this h2 is used to display the total for the monthly expenses once it is calculated -->
+        <h2 class="tableSec__title__total"></h2>
       </div>
       <table class="tableSec__table" cellspacing="0" cellpadding="0">
         <thead class="tableSec__table__thead">
@@ -34,12 +36,15 @@
             <th>Annual Salary</th>
             <th>&nbsp;</th>
           </tr>
+          <!-- Input text boxes used to add new employees -->
           <tr>
             <th><input type="text" id="in-first-name" placeholder="First Name" /></th>
             <th><input type="text" id="in-last-name" placeholder="Last Name" /></th>
+            <!-- Id numbers must be unique -->
             <th><input type="text" id="in-id-number" placeholder="ID Number" /></th>
             <th><input type="text" id="in-job-title" placeholder="Job Title" /></th>
             <th><input type="text" id="in-annual-salary" placeholder="Annual Salary" /></th>
+            <!-- When pressed this runs the addEmployee function using the text from the input fileds. -->
             <th><button class="submit">Submit</button></th>
           </tr>
         </thead>
